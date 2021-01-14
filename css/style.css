@@ -264,3 +264,49 @@ a {
     letter-spacing: .15rem;
     color: var(--text-color);
 }
+
+.services .cta {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.services .cta a {
+    display: inline-block;
+    height: 65px;
+    padding-right: 50px;
+    padding-left: 50px;
+
+    background: var(--gradient-color);
+    border-radius: 3px;
+
+    font-family: var(--title-font);
+    font-size: 1.3rem;
+    line-height: 6.5rem;
+}
+
+/* Módulo Contato */
+.contacts {
+    max-width: 790px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.contacts .cta {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.contacts .cta a {
+    display: inline-block;
+    height: 65px;
+    padding-right: 50px;
+    padding-left: 50px;
+
+    background: var(--gradient-color);
+    border-radius: 3px;
+
+    font-family: var(--title-font);
+    font-size: 1.3rem;
+    line-height: 6.5rem;
+}
