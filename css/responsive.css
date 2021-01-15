@@ -4,7 +4,8 @@
 @media screen and (max-width: 1024px) {
     .module,
     .main-header,
-    .main-footer {
+    .main-footer,
+    .services .content {
         padding-right: 30px;
         padding-left: 30px;
     }
@@ -26,6 +27,10 @@
 
 /* iPad e outros tablets em retrato */
 @media screen and (max-width: 768px) {
+    .services .content .card {
+        padding: 50px 20px;
+    }
+
     .portfolio .content {
         grid-template-columns: 1fr;
     }
@@ -52,5 +57,51 @@
 @media screen and (max-width: 414px) {
     .bio-david .profile-photo {
         width: 100%;
+    }
+
+    .portfolio .content .card .thumbnail {
+        height: 280px;
+    }
+}
+
+/* iPhone 6/7/8 */
+@media screen and (max-width: 375px) {
+    h2 {
+        font-size: 3.2rem;
+        line-height: 4rem;
+    }
+
+    .bio-david .profile-photo {
+        height: 400px;
+    }
+
+    .portfolio .content .card .thumbnail {
+        height: 225px;
+    }
+}
+
+/* iPhone 5/SE */
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: 3.6rem;
+        line-height: 4.2rem;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+        line-height: 3rem;
+    }
+
+    h4 {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+    }
+
+    .bio-david .profile-photo {
+        height: 345px;
+    }
+
+    .portfolio .content .card .thumbnail {
+        height: 195px;
     }
 }
