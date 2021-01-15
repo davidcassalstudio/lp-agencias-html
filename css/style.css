@@ -7,8 +7,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border: 0;
+    border: 0;  
+}
 
+:root {
     /* Variáveis */
     --base-color: #131110;
     --support-color: #191919;
@@ -19,6 +21,13 @@
     --gradient-color: linear-gradient(45deg, #074F71, #054563);
     --title-font: 'Krona One';
     --text-font: 'Barlow Condensed', sans-serif;
+}
+
+.light-mode {
+    --base-color: #fff;
+    --support-color: #f2f2f2;
+    --negative-color: #191919;
+    --text-color:#2C2A29;
 }
 
 :hover {
@@ -169,6 +178,40 @@ a {
     color: var(--text-color);
 }
 
+/* Módulo Header */
+.main-header {
+    display: flex;
+    flex-basis: 0;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0 100px;
+}
+
+.main-header .cta {
+    flex-grow: 1;
+    padding: 0 30px;
+    
+    text-align: right;
+}
+
+.main-header .cta a {
+    display: inline-block;
+    height: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
+
+    background: transparent;
+    border: 2px solid var(--brand-color);
+    border-radius: 4px;
+
+    font-family: var(--title-font);
+    font-size: 1.3rem;
+    line-height: 5rem;
+    color: var(--brand-color);
+}
+
 /* Módulo Biografia */
 .bio-david {
     display: grid;
@@ -284,6 +327,7 @@ a {
     font-family: var(--title-font);
     font-size: 1.3rem;
     line-height: 6.5rem;
+    color: #f2f2f2;
 }
 
 /* Módulo Portfolio */
@@ -345,6 +389,7 @@ a {
     font-family: var(--title-font);
     font-size: 1.3rem;
     line-height: 6.5rem;
+    color: #f2f2f2;
 }
 
 /* Módulo Rodapé */
