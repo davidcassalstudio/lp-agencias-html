@@ -57,6 +57,7 @@ html, body {
 
     z-index: 10;
     overscroll-behavior-y: none;
+    scroll-behavior: smooth;
 
     transition: all 0.25s linear;
 }

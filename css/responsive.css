@@ -1,0 +1,56 @@
+@media screen and (min-width: 1600px) {}
+
+/* iPad e outros tablets em paisagem */
+@media screen and (max-width: 1024px) {
+    .module,
+    .main-header,
+    .main-footer {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .bio-david,
+    .services .content {
+        grid-template-columns: 1fr;
+    }
+
+    .bio-david {
+        text-align: center;
+    }
+
+    .bio-david .profile-photo {
+        max-width: 425px;
+        margin: 0 auto;
+    }
+}
+
+/* iPad e outros tablets em retrato */
+@media screen and (max-width: 768px) {
+    .portfolio .content {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Galaxy Fold */
+@media screen and (max-width: 540px) {
+    .main-header .cta {
+        display: none;
+    }
+
+    .main-footer {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+    }
+
+    .main-footer .logo-david {
+        margin: 0 auto;
+    }
+}
+
+/* iPhone 6/7/8 Plus */
+@media screen and (max-width: 414px) {
+    .bio-david .profile-photo {
+        width: 100%;
+    }
+}
