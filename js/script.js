@@ -6,6 +6,7 @@ const lightModeToggle = document.querySelector('#switch');
 const enableLightMode = () => {
   // 1. Add the class to the body
   document.body.classList.add('light-mode');
+  document.body.classList.remove('default-theme');
   // 2. Update lightMode in localStorage
   localStorage.setItem('lightMode', 'enabled');
 }
@@ -13,6 +14,7 @@ const enableLightMode = () => {
 const disableLightMode = () => {
   // 1. Remove the class from the body
   document.body.classList.remove('light-mode');
+  document.body.classList.add('default-theme');
   // 2. Update lightMode in localStorage 
   localStorage.setItem('lightMode', null);
 }

@@ -24,7 +24,7 @@
 }
 
 .light-mode {
-    --base-color: #fff;
+    --base-color: #fefefe;
     --support-color: #f2f2f2;
     --negative-color: #191919;
     --text-color:#2C2A29;
@@ -94,6 +94,28 @@ body::before {
     70% { background-position: 0% 15%; }
     80% { background-position: 25% 35%; }
     90% { background-position: -10% 10%; }
+}
+
+@keyframes effectOut {
+    from {
+        top: 0;
+        opacity: 1;
+    }
+    to {
+        top: -50px;
+        opacity: 0;
+    }
+}
+
+@keyframes effectIn {
+    from {
+        top: 50px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
 }
 
 /* Tipografia */
@@ -189,6 +211,42 @@ a {
     padding: 50px 0 100px;
 }
 
+.main-header .logo-david {
+    position: relative;
+    width: 41px;
+    height: 65px;
+}
+
+.main-header .logo-david .logo-white,
+.main-header .logo-david .logo-black {
+    position: absolute;
+    left: 0;
+}
+
+.default-theme .main-header .logo-david .logo-white {
+    top: 0;
+    opacity: 1;
+    animation: effectIn 300ms ease-in-out;
+}
+
+.default-theme .main-header .logo-david .logo-black {
+    top: -50px;
+    opacity: 0;
+    animation: effectOut 300ms ease-in-out;
+}
+
+.light-mode .main-header .logo-david .logo-white {
+    top: -50px;
+    opacity: 0;
+    animation: effectOut 300ms ease-in-out;
+}
+
+.light-mode .main-header .logo-david .logo-black {
+    top: 0;
+    opacity: 1;
+    animation: effectIn 300ms ease-in-out;
+}
+
 .main-header .cta {
     flex-grow: 1;
     padding: 0 30px;
@@ -210,6 +268,44 @@ a {
     font-size: 1.3rem;
     line-height: 5rem;
     color: var(--brand-color);
+}
+
+.main-header #switch {
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+.main-header #switch .icon-white,
+.main-header #switch .icon-black {
+    position: absolute;
+    left: 0;
+
+    cursor: pointer;
+}
+
+.default-theme .main-header #switch .icon-white {
+    top: 0;
+    opacity: 1;
+    animation: effectIn 300ms ease-in-out;
+}
+
+.default-theme .main-header #switch .icon-black {
+    top: -50px;
+    opacity: 0;
+    animation: effectOut 300ms ease-in-out;
+}
+
+.light-mode .main-header #switch .icon-white {
+    top: -50px;
+    opacity: 0;
+    animation: effectOut 300ms ease-in-out;
+}
+
+.light-mode .main-header #switch .icon-black {
+    top: 0;
+    opacity: 1;
+    animation: effectIn 300ms ease-in-out;
 }
 
 /* Módulo Biografia */
@@ -403,6 +499,42 @@ a {
     margin: 0 auto;
     padding-top: 100px;
     padding-bottom: 50px;
+}
+
+.main-footer .logo-david {
+    position: relative;
+    width: 41px;
+    height: 65px;
+}
+
+.main-footer .logo-david .logo-white,
+.main-footer .logo-david .logo-black {
+    position: absolute;
+    left: 0;
+}
+
+.default-theme .main-footer .logo-david .logo-white {
+    top: 0;
+    opacity: 1;
+    animation: effectIn 300ms ease-in-out;
+}
+
+.default-theme .main-footer .logo-david .logo-black {
+    top: -50px;
+    opacity: 0;
+    animation: effectOut 300ms ease-in-out;
+}
+
+.light-mode .main-footer .logo-david .logo-white {
+    top: -50px;
+    opacity: 0;
+    animation: effectOut 300ms ease-in-out;
+}
+
+.light-mode .main-footer .logo-david .logo-black {
+    top: 0;
+    opacity: 1;
+    animation: effectIn 300ms ease-in-out;
 }
 
 .main-footer .contact span {
