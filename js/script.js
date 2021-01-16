@@ -1,3 +1,25 @@
+var scrollToTopBtn = document.getElementById("scrollToTopBtn")
+
+var rootElement = document.documentElement
+function handleScroll() {
+  // Do something on scroll
+  var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight
+  if ((rootElement.scrollTop / scrollTotal ) > 0.30 ) {
+    // Show button
+    scrollToTopBtn.classList.add("showBtn")
+  } else {
+    // Hide button
+    scrollToTopBtn.classList.remove("showBtn")
+  }
+}
+document.addEventListener("scroll", handleScroll)
+
+// Botão Voltar ao Topo
+function backTop(){
+  var html = document.documentElement;
+  html.scrollTop = 0;
+}
+
 // check for saved 'lightMode' in localStorage
 let lightMode = localStorage.getItem('lightMode'); 
 

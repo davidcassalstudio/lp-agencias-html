@@ -457,6 +457,15 @@ a {
     font-size: 1.3rem;
     line-height: 6.5rem;
     color: #f2f2f2;
+
+    transition: all .5s ease-in-out;
+}
+
+.services .cta a:hover {
+    box-shadow: 0 8px 16px 0 rgba(39, 17, 45, 0.1);
+
+    transform: scale(1.05) translate(0px, -4px);
+    transition: all .5s ease-in-out;
 }
 
 /* Módulo Portfolio */
@@ -525,6 +534,15 @@ a {
     font-size: 1.3rem;
     line-height: 6.5rem;
     color: #f2f2f2;
+
+    transition: all .5s ease-in-out;
+}
+
+.contacts .cta a:hover {
+    box-shadow: 0 8px 16px 0 rgba(39, 17, 45, 0.1);
+
+    transform: scale(1.05) translate(0px, -4px);
+    transition: all .5s ease-in-out;
 }
 
 /* Módulo Rodapé */
@@ -598,3 +616,29 @@ a {
 .main-footer .social-media a {
     margin-right: 10px;
 }
+
+.main-footer .social-media a:last-child {
+    margin-right: 0;
+}
+
+/* Botão Voltar ao Topo */
+#scrollToTopBtn {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+
+    width: 32px;
+    height: 32px;
+
+    pointer-events: all;
+    opacity: 0;
+    transform: translateY(100px);
+    z-index: 100;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.showBtn {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
