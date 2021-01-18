@@ -77,7 +77,7 @@ body::before {
     background-image: url(../images/padrao.png);
     background-repeat: repeat;
 
-    opacity: .3;
+    opacity: .4;
 
     z-index: -1;
     animation: noise 10s steps(10) infinite;
@@ -280,6 +280,11 @@ a {
     animation: effectIn 300ms ease-in-out;
 }
 
+.main-header .link-home a {
+    font-family: var(--title-font);
+    font-size: 1.3rem;
+}
+
 .main-header .cta {
     flex-grow: 1;
     padding: 0 30px;
@@ -301,6 +306,15 @@ a {
     font-size: 1.3rem;
     line-height: 5rem;
     color: var(--brand-color);
+
+    transition: all .5s ease-in-out;
+}
+
+.main-header .cta a:hover {
+    box-shadow: 0 8px 16px 0 rgba(39, 17, 45, 0.1);
+
+    transform: scale(1.025);
+    transition: all .5s ease-in-out;
 }
 
 .main-header #switch {
@@ -352,6 +366,11 @@ a {
 
 .bio-david .title-bar {
     margin-bottom: 50px;
+}
+
+.bio-david .content p a {
+    color: var(--negative-color);
+    font-weight: 700;
 }
 
 .bio-david .profile-photo {
@@ -624,8 +643,8 @@ a {
 /* Botão Voltar ao Topo */
 #scrollToTopBtn {
     position: fixed;
-    right: 30px;
     bottom: 30px;
+    left: 30px;
 
     width: 32px;
     height: 32px;
@@ -641,4 +660,79 @@ a {
 .showBtn {
     opacity: 1 !important;
     transform: translateY(0) !important;
-  }
+}
+
+/* Detalhes do Projeto */
+.module.intro-job {
+    padding: 200px 0;
+}
+
+.intro-job .title-bar {
+    margin-bottom: 100px;
+}
+
+.intro-job .infos-job {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: start;
+    align-items: center;
+}
+
+.intro-job .infos-job div:last-child {
+    justify-self: end;
+}
+
+.intro-job .infos-job span {
+    display: block;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    letter-spacing: .15rem;
+}
+
+.intro-job .infos-job .title {
+    font-weight: 700;
+}
+
+.intro-job .infos-job .description {
+    color: var(--text-color);
+}
+
+.intro-job .infos-job img {
+    height: 40px;
+}
+
+.content-job h2,
+.content-job h3,
+.content-job h4,
+.content-job h5,
+.content-job h6,
+.content-job p {
+    max-width: 790px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.content-job .description-job {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.content-job .description-job h3 {
+    line-height: 4rem !important;
+}
+
+.content-job .gallery-job {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.content-job .link-job {
+    text-align: center;
+}
+
+.content-job .link-job a {
+    font-family: var(--title-font);
+    font-size: 1.3rem;
+    line-height: 3rem;
+}
