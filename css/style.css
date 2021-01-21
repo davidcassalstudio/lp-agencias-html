@@ -16,9 +16,9 @@
     --support-color: #191919;
     --negative-color: #f2f2f2;
     --text-color: rgba(242,242,242,.75);
-    --brand-color: #074F71;
+    --brand-color: #363756;
     --secundary-color: #054563;
-    --gradient-color: linear-gradient(45deg, #074F71, #054563);
+    --gradient-color: linear-gradient(45deg, #363756, #054563);
     --title-font: 'Krona One';
     --text-font: 'Barlow Condensed', sans-serif;
 }

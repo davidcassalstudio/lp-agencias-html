@@ -4,7 +4,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   	<meta charset="UTF-8">
   	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>David Cassal</title>
+	<title>Projeto de site Bengal Brazil -> David Cassal</title>
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -39,11 +39,10 @@
 </head>
 <body class="default-theme">
 	<!-- Módulo Header -->
-	<header class="main-header" data-anime>
-		<div class="logo-david">
-			<img src="images/logo-david-cassal-branco.svg" alt="Logotipo David Cassal" class="logo-white">
-			<img src="images/logo-david-cassal-preto.svg" alt="Logotipo David Cassal" class="logo-black">
-		</div>
+	<header class="main-header" data-anime="top">
+        <div class="link-home">
+            <a href="index.html" title="Voltar à página inicial"><span><</span> Voltar ao início</a>
+        </div>
 
 		<div class="cta">
 			<a href="#contacts" title="Entre em contato">Entrar em Contato</a>
@@ -53,26 +52,59 @@
 			<img src="images/icone-light-mode.svg" alt="Escolher modo claro" class="icon-white">
 			<img src="images/icone-dark-mode.svg" alt="Escolher modo escuro" class="icon-black">
 		</div>
-	</header>
+    </header>
+    </section>
 
 	<!-- Módulo Introdução -->
-	<section class="module intro-job">
-		<div data-anime="left">
-			<div class="title-bar">
-				<h1>Site Bengal Brazil<span class="point">.</span></h1>
-			</div>
-		</div>
+	<section class="module intro-job" data-anime="top">
+        <div class="title-bar">
+            <h1>Site Bengal Brazil<span class="point">.</span></h1>
+        </div>
 
-		<div data-anime="right">
-            <p>Bengal Brazil é um gatio especializado na raça de gatos Bengal. Criei a interface e desenvolvi o projeto para ser administrado no WordPress, com blog e recurso de alternância entre temas claro e escuro.</p>
-            
-            <a href="#content-job" title="" class="">Ver projeto</a>
+		<div class="infos-job">
+            <div>
+                <span class="title">Ano</span>
+                <span class="description">2020</span>
+            </div>
+            <div>
+                <span class="title">Agência</span>
+                <span class="description">IkMob AllBound Marketing</span>
+            </div>
+            <div>
+                <span class="title">Serviços</span>
+                <span class="description">UI Design, Desenvolvimento</span>
+            </div>
+            <div>
+                <a href="#content-job">
+                    <img src="images/icone-descer.svg" alt="Descer ao conteúdo" id="scrollToTheContent">
+                </a>
+            </div>
 		</div>
     </section>
     
     <!-- Módulo Conteúdo do Projeto -->
     <section class="module content-job" id="content-job">
-        Conteúdo
+        <div class="thumbnail-job" data-anime="top">
+            Imagem
+        </div>
+
+        <div class="description-job" data-anime="top">
+            <h3>Criação de site para a Bengal Brazil, um gatio especializado na raça Bengal<span class="point">.</span></h3>
+        </div>
+
+        <div class="text-job" data-anime="top">
+            <p>O site conta com navegação clara e intuitiva, cuidado máximo aos detalhes e microinterações bem pensadas. Possui também recurso de alternância entre temas claro e escuro, blog com barra de porcentagem de leitura, sistema de busca, e claro, é totalmente responsivo.</p>
+
+            <p>Confira as imagens do projeto abaixo:</p>
+        </div>
+
+        <div class="gallery-job" data-anime="top">
+            Mais imagens
+        </div>
+
+        <div class="link-job" data-anime="top">
+            <a href="https://brazilbengal.com/" title="Acesse o projeto" target="_blank">Acessar projeto ></a>
+        </div>
     </section>
 	
 
@@ -116,7 +148,9 @@
 		</div>
 	</footer>
 
-	<img src="images/icone-topo.svg" alt="Ir ao topo" id="scrollToTopBtn" onclick="backTop()">
+    <img src="images/icone-topo.svg" alt="Ir ao topo" id="scrollToTopBtn" onclick="backTop()">
+    
+    <script>window.rwbp={email: 'contato@davidcassal.com',phone: '5522920000381',message: ''}</script><script defer async src='https://duz4dqsaqembt.cloudfront.net/client/whats.js'></script>
 
 	<!-- Javascript -->
 	<script src="js/script.js"></script>
