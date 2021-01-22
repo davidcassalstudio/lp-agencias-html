@@ -689,9 +689,14 @@ a {
   transform: translateY(0) !important;
 }
 
+/* Botão do WhatsApp */
 button.svelte-1ej2tuk {
   left: 30px !important;
   bottom: 30px !important;
+}
+
+.box.svelte-1q4rq0i.svelte-1q4rq0i.svelte-1q4rq0i {
+    left: 30px !important;
 }
 
 /* Detalhes do Projeto */
