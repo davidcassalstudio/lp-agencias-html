@@ -47,10 +47,39 @@
   }
 }
 
-/* Galaxy Fold */
+/* Surface Duo */
 @media screen and (max-width: 540px) {
   .main-header .cta {
     display: none;
+  }
+
+  .portfolio .content .card {
+    margin-bottom: 25px;
+  }
+
+  .portfolio .content .card .content-card {
+    text-align: center;
+  }
+
+  .portfolio .content .card .img-card {
+    position: relative;
+    top: inherit;
+    right: inherit;
+
+    width: 100%;
+    height: auto;
+
+    transform: inherit;
+    opacity: 1;
+  }
+
+  .portfolio .content .card .img-card img {
+    max-width: 100%;
+  }
+
+  .portfolio .content .card:hover .img-card {
+    transform: inherit;
+    opacity: inherit;
   }
 
   .main-footer {
