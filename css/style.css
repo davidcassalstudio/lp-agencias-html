@@ -671,7 +671,7 @@ a {
 #scrollToTopBtn {
   position: fixed;
   bottom: 30px;
-  left: 30px;
+  right: 30px;
 
   width: 32px;
   height: 32px;
@@ -687,6 +687,11 @@ a {
 .showBtn {
   opacity: 1 !important;
   transform: translateY(0) !important;
+}
+
+button.svelte-1ej2tuk {
+  left: 30px !important;
+  bottom: 30px !important;
 }
 
 /* Detalhes do Projeto */
