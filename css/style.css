@@ -13,7 +13,7 @@
 :root {
   /* Variáveis */
   --base-color: #131219;
-  --support-color: #15141B;
+  --support-color: #15141b;
   --negative-color: #f2f2f2;
   --text-color: rgba(242, 242, 242, 0.75);
   --brand-color: #363756;
@@ -26,7 +26,7 @@
 .light-mode {
   --base-color: #fefefe;
   --support-color: #f2f2f2;
-  --negative-color: #15141B;
+  --negative-color: #15141b;
   --text-color: #2c2a29;
 }
 
@@ -321,13 +321,13 @@ a {
   padding-left: 30px;
 
   background: transparent;
-  border: 2px solid var(--brand-color);
+  border: 2px solid var(--negative-color);
   border-radius: 4px;
 
   font-family: var(--title-font);
   font-size: 1.3rem;
   line-height: 5rem;
-  color: var(--brand-color);
+  color: var(--negative-color);
 
   transition: all 0.5s ease-in-out;
 }
@@ -390,7 +390,7 @@ a {
   margin-bottom: 50px;
 }
 
-.bio-david .title-bar  h1 {
+.bio-david .title-bar h1 {
   margin-left: -3px; /* Correção de posicionamento */
 }
 
