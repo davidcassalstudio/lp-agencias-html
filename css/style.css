@@ -12,8 +12,8 @@
 
 :root {
   /* Variáveis */
-  --base-color: #131110;
-  --support-color: #191919;
+  --base-color: #131219;
+  --support-color: #15141B;
   --negative-color: #f2f2f2;
   --text-color: rgba(242, 242, 242, 0.75);
   --brand-color: #363756;
@@ -26,7 +26,7 @@
 .light-mode {
   --base-color: #fefefe;
   --support-color: #f2f2f2;
-  --negative-color: #191919;
+  --negative-color: #15141B;
   --text-color: #2c2a29;
 }
 
@@ -78,7 +78,7 @@ body::before {
   background-image: url(../images/padrao.png);
   background-repeat: repeat;
 
-  opacity: 0.4;
+  opacity: 0.15;
 
   z-index: -1;
   animation: noise 10s steps(10) infinite;
@@ -388,6 +388,10 @@ a {
 
 .bio-david .title-bar {
   margin-bottom: 50px;
+}
+
+.bio-david .title-bar  h1 {
+  margin-left: -3px; /* Correção de posicionamento */
 }
 
 .bio-david .content p a {
