@@ -30,6 +30,11 @@
   --text-color: #2c2a29;
 }
 
+::selection {
+  background: var(--negative-color);
+  color: var(--brand-color);
+}
+
 :hover {
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
@@ -232,6 +237,23 @@ a {
 
 .point {
   color: var(--brand-color);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 0;
+  background: var(--support-color);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1px;
+  background: var(--brand-color);
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 1px;
+  background-color: transparent;
 }
 
 /* Estrutura inicial */
