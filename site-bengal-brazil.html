@@ -150,9 +150,39 @@
 			<p>Se você gostou do meu trabalho e precisa de freelancer para sua agência, entre em contato comigo para marcarmos uma conversa. Tem alguma dúvida? Estou à disposição!</p>
 		</div>
 
-		<div class="cta" data-anime="top">
-			<a href="mailto:contato@davidcassal.com?subject=Olá, preciso de freelancer" title="Entre em contato">Entrar em contato</a>
-		</div>
+		<!-- Formulário do Dinamize -->
+		<form version="2.0" class="formIntegration formIntegration2 " accept-charset="UTF-8" method="post" onsubmit="return dinForms.ValidateForm(this)" action="https://receiver.emkt.dinamize.com/in/329561/1/f7bc5/0" target="DinamizeIframeFormIntegration" data-anime="top">
+			<input type="hidden" name="update_mode" value="AS"/>
+			<input type="hidden" name="form-code" value="1"/>
+			<input type="hidden" name="isMsg" value="true"/><div class="DinamizeDivCaptchaMessage">Captcha obrigatório</div>
+			<div class="DinamizeDivMessageAlert"></div>
+					<div class="DinamizeDivMessageSuccess">Seu e-mail foi cadastrado com sucesso!</div>
+					<div class="DinamizeDivMessageError"></div>
+					<input type="hidden" name="text-confirmation" value="U2V1IGUtbWFpbCBmb2kgY2FkYXN0cmFkbyBjb20gc3VjZXNzbyE="/>
+					<input type="hidden" name="text-error" value=""/>
+					<input type="hidden" name="text-alert" value=""/><input type="hidden" name="cmp4" value="Ag&ecirc;ncia"/><input type="hidden" name="phase-change" value="on"/><div class=""><div class="block"><div class="vertical divinput"><input type="text" name="cmp2"  placeholder="Nome" format=""  class="type_VC field-required " maxlength="80" />
+															</div>
+							</div><div class="block"><div class="vertical divinput"><input type="text" name="cmp1"  placeholder="E-mail" format=""  class="type_EMAIL field-required " maxlength="80" />
+															</div>
+							</div><div class="block"><div class="vertical divinput"><div class="div_PHN ">
+																	<div class="div_PHN_DDI">
+																			<input type="text" name="cmp6_DDI" hd-name="cmp6" maxlength="5" placeholder="+1" value="55" class="type_PHN_DDI " />
+																	</div><div class="div_PHN_NUM">
+																			<input type="text" name="cmp6_NUM" hd-name="cmp6" maxlength="20" placeholder="(00) 0000-0000" class="type_PHN_NUM " />
+																	</div>
+																	<input type="hidden" name="cmp6" />
+															</div></div>
+							</div><div class="block"><div class="vertical divinput"><input type="text" name="cmp5"  placeholder="Nome da agência" format=""  class="type_VC field-required " maxlength="80" />
+															</div>
+							</div><div class="block"><div class="vertical divinput"><textarea name="cmp7" placeholder="Mensagem" format="" class="type_TXT " maxlength="3000" ></textarea></div>
+							</div><div class="block">
+							<div class="vertical class5 submit submit-button-td">
+									<input type="submit" value="Cadastre-se" original-value="Cadastre-se" class="dinSubmit" />
+									<div class="spinner"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div>
+							</div>
+					</div>
+			</div>
+		</form>
 	</section>
 
 	<!-- Módulo Rodapé -->
@@ -185,5 +215,6 @@
 
 	<!-- Javascript -->
 	<script src="js/script.js"></script>
+	<script src="js/form.js"></script>
 </body>
 </html>
