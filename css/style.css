@@ -662,6 +662,18 @@ a {
   grid-template-columns: 1fr 4fr;
 }
 
+.contacts label {
+  display: block;
+  margin-bottom: 5px;
+
+  font-family: var(--text-font);
+  font-size: 1.4rem;
+  line-height: 2rem;
+  letter-spacing: 0.075rem;
+  color: var(--text-color);
+  text-align: left;
+}
+
 .contacts input {
   width: 100%;
   height: 50px;
@@ -676,6 +688,12 @@ a {
   font-size: 1.4rem;
   letter-spacing: 0.075rem;
   color: var(--text-color);
+
+  appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
 }
 
 .contacts textarea {
@@ -692,9 +710,15 @@ a {
   font-size: 1.4rem;
   letter-spacing: 0.075rem;
   color: var(--text-color);
+
+  appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
 }
 
-.contacts input[type="submit"] {
+.contacts button[type="submit"] {
   width: 100%;
   height: 65px;
 
@@ -709,9 +733,15 @@ a {
 
   transition: all 0.5s ease-in-out;
   cursor: pointer;
+
+  appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
 }
 
-.contacts input[type="submit"]:hover {
+.contacts button[type="submit"]:hover {
   box-shadow: 0 8px 16px 0 rgba(39, 17, 45, 0.1);
 
   transform: scale(1.05) translate(0px, -4px);
@@ -945,21 +975,80 @@ button.svelte-1ej2tuk {
 form.formIntegration2 .DinamizeDivMessageSuccess,
 form.formIntegration2 .DinamizeDivMessageAlert,
 form.formIntegration2 .DinamizeDivMessageError,
-form.formIntegration2 .DinamizeDivCaptchaMessage {display: none; margin: 0px 0px 10px; color: rgb(255, 255, 255); font-size: 14px; font-family: arial; padding: 15px;}
+form.formIntegration2 .DinamizeDivCaptchaMessage {
+  display: none;
+  margin: 0px 0px 10px;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-family: arial;
+  padding: 15px;
+}
 
-form.formIntegration2 .DinamizeDivMessageSuccess {background-color: rgb(20, 118, 18);}
+form.formIntegration2 .DinamizeDivMessageSuccess {
+  background-color: rgb(20, 118, 18);
+}
 form.formIntegration2 .DinamizeDivMessageAlert,
 form.formIntegration2 .DinamizeDivMessageError,
-form.formIntegration2 .DinamizeDivCaptchaMessage { background-color: #ac0000; }
+form.formIntegration2 .DinamizeDivCaptchaMessage {
+  background-color: #ac0000;
+}
 
-form.formIntegration2 .spinner {display: none;}
+form.formIntegration2 .spinner {
+  display: none;
+}
 
-form.formIntegration2.style1 .spinner { display: none; bottom: 0; height: 18px; left: 0; margin: auto; position: absolute; right: 0; top: 0; }
-form.formIntegration2.style1 .spinner > div { width: 18px; height: 18px; background-color: #fff; border-radius: 100%; display: inline-block; -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both; animation: sk-bouncedelay 1.4s infinite ease-in-out both;}
-form.formIntegration2.style1 .spinner .bounce1 { -webkit-animation-delay: -0.32s; animation-delay: -0.32s;}
-form.formIntegration2.style1 .spinner .bounce2 { -webkit-animation-delay: -0.16s; animation-delay: -0.16s;}
+form.formIntegration2.style1 .spinner {
+  display: none;
+  bottom: 0;
+  height: 18px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+form.formIntegration2.style1 .spinner > div {
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+form.formIntegration2.style1 .spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+form.formIntegration2.style1 .spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
 
-form.formIntegration2.style2 .spinner { display: none; bottom: 0; height: 18px; left: 0; margin: auto; position: absolute; right: 0; top: 0; }
-form.formIntegration2.style2 .spinner > div { width: 18px; height: 18px; background-color: #fff; border-radius: 100%; display: inline-block; -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both; animation: sk-bouncedelay 1.4s infinite ease-in-out both;}
-form.formIntegration2.style2 .spinner .bounce1 { -webkit-animation-delay: -0.32s; animation-delay: -0.32s;}
-form.formIntegration2.style2 .spinner .bounce2 { -webkit-animation-delay: -0.16s; animation-delay: -0.16s;}
+form.formIntegration2.style2 .spinner {
+  display: none;
+  bottom: 0;
+  height: 18px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+form.formIntegration2.style2 .spinner > div {
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+form.formIntegration2.style2 .spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+form.formIntegration2.style2 .spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
